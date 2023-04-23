@@ -19,12 +19,14 @@ namespace MyFirstConsoleApplication
             TimeSpan diff = (Xmas - DateTime.Now);
             Console.WriteLine(diff.Days + " Days till Christmas.");
 
-            //Console.ReadKey();
+
 
             double width, height, woodLength, glassArea;
             string widthString, heightString;
+            Console.WriteLine("Input the width");
             widthString = Console.ReadLine();
             width = double.Parse(widthString);
+            Console.WriteLine("Input the height");
             heightString = Console.ReadLine();
             height = double.Parse(heightString);
             woodLength = 2 * (width + height) * 3.25;
